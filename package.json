@@ -1,0 +1,40 @@
+{
+  "name": "cinema-booking-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoelJohs/cinema-booking-monorepo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/JoelJohs/cinema-booking-monorepo/issues"
+  },
+  "homepage": "https://github.com/JoelJohs/cinema-booking-monorepo#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^20.2.0",
+    "@commitlint/config-conventional": "^20.2.0",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.7.4",
+    "typescript": "^5.9.3"
+  },
+  "lint-staged": {
+  "*.{js,ts,json,md}": [
+    "prettier --write"
+  ],
+  "*.{js,ts}": [
+    "eslint --fix"
+  ]
+  }
+}
